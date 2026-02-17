@@ -4,3 +4,5 @@ To get everybody onboarded, we will use this document to make sure the developme
 1. Erik: I'd like to work on FPGA and embedded ML skills. I mostly enjoy JRPGs like Ace Attorney, Persona, etc.
 
 2. Abbas: I'd like to work on PCB Design, deep learning, and embedded systems. My favorite games are Street Fighter, Marvel Rivals, Smash Bros. 
+
+3. Catherine: Not sure yet, but I'd like to gain experience with embedded development and working as part of a larger team (dividing tasks/source control, etc.). I lowkey don't play games =_=; 
