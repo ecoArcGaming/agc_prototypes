@@ -5,4 +5,6 @@ To get everybody onboarded, we will use this document to make sure the developme
 
 2. Abbas: I'd like to work on PCB Design, deep learning, and embedded systems. My favorite games are Street Fighter, Marvel Rivals, Smash Bros. 
 
-3. Catherine: Not sure yet, but I'd like to gain experience with embedded development and working as part of a larger team (dividing tasks/source control, etc.). I lowkey don't play games =_=; 
+3. Catherine: Not sure yet, but I'd like to gain experience with embedded development and working as part of a larger team (dividing tasks/source control, etc.). I lowkey don't play games =_=;
+   
+4. Gladys: I want to work on FPGA (got some experience with my hardware class last semester but would like to do more), PCB design, and embedded systems. I don't really play games but sometimes play Minecraft with my younger brother back home :) 
