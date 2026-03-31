@@ -1,0 +1,11 @@
+# --- Base Hardware & I/O ---
+Jetson.GPIO==2.1.6
+opencv-python>=4.8.0
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# some tts/stt things
+faster-whisper>=1.0.0
+piper-tts>=1.2.0
+
+vllm>=0.4.0
