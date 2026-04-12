@@ -7,7 +7,7 @@ from pathlib import Path
 # Test all audio files in test_data/audio
 transcriber = WhisperTranscriber()
 
-audio_path = Path("test_model/test_data/audio")
+audio_path = Path("tests/test_data/audio")
 for file in audio_path.iterdir():
     print(f"\nTesting {file}...")
     translated_voice = transcriber.transcribe(file)
