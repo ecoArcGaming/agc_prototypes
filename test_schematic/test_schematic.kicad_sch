@@ -1726,6 +1726,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Digipot (Left Joystick)"
+		(exclude_from_sim no)
+		(at 166.37 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "959cdf44-4655-43ac-9f65-2c7212e70a4e")
+	)
 	(junction
 		(at 99.06 53.34)
 		(diameter 0)
@@ -1737,6 +1747,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99908cf8-6909-4470-b2a2-8f2e6c61f8de")
+	)
+	(wire
+		(pts
+			(xy 135.89 80.01) (xy 132.08 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ac65643-6406-45e8-b84e-1de681f5a8a5")
 	)
 	(wire
 		(pts
@@ -1760,6 +1780,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 80.01) (xy 132.08 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bf07c1d-7e63-414b-ba76-ce3b4ddeac07")
+	)
+	(wire
+		(pts
 			(xy 99.06 48.26) (xy 99.06 53.34)
 		)
 		(stroke
@@ -1767,6 +1797,16 @@
 			(type default)
 		)
 		(uuid "33fec02f-ff39-43bf-badf-01409ba88e22")
+	)
+	(wire
+		(pts
+			(xy 204.47 100.33) (xy 129.54 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fe21917-927b-4cee-9a8d-f302f9f0e33b")
 	)
 	(wire
 		(pts
@@ -1810,6 +1850,36 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 77.47) (xy 204.47 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "761c1251-e6f8-4de5-bf47-beeacd5b3b4c")
+	)
+	(wire
+		(pts
+			(xy 196.85 77.47) (xy 204.47 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77610d32-f9e0-4d1e-8241-d39ba05b0130")
+	)
+	(wire
+		(pts
+			(xy 132.08 82.55) (xy 114.3 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f11f124-7149-4ba7-96c9-4d5dec2cd809")
+	)
+	(wire
+		(pts
 			(xy 88.9 53.34) (xy 88.9 59.69)
 		)
 		(stroke
@@ -1817,6 +1887,16 @@
 			(type default)
 		)
 		(uuid "8e9fc984-6bd4-4f92-8ecf-ee9c400bd190")
+	)
+	(wire
+		(pts
+			(xy 129.54 100.33) (xy 129.54 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d74ecb3-fa78-410f-b04e-63fb16576663")
 	)
 	(wire
 		(pts
@@ -1837,6 +1917,16 @@
 			(type default)
 		)
 		(uuid "b8ee6a12-0505-424d-9282-a56cbb27172b")
+	)
+	(wire
+		(pts
+			(xy 129.54 80.01) (xy 114.3 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc0d1dd9-21dc-4c46-907d-455a62a68291")
 	)
 	(wire
 		(pts
