@@ -1876,6 +1876,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Y-Axis Pot\n"
+		(exclude_from_sim no)
+		(at 129.54 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "317b59fd-077e-40a1-aa88-69877e213c5e")
+	)
 	(text "Digipot (Left Joystick)"
 		(exclude_from_sim no)
 		(at 166.37 82.55 0)
@@ -1886,6 +1896,32 @@
 		)
 		(uuid "959cdf44-4655-43ac-9f65-2c7212e70a4e")
 	)
+	(text "Digipot (Right Joystick)"
+		(exclude_from_sim no)
+		(at 167.64 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b0edc178-f002-41bf-8357-0784903c30bb")
+	)
+	(text "X-Axis Pot"
+		(exclude_from_sim no)
+		(at 223.266 124.968 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e59bcaec-ee82-4ae0-bcf2-9d380ed9c476")
+	)
+	(junction
+		(at 124.46 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "366d44dd-7827-4bcb-abc6-1593b0c42482")
+	)
 	(junction
 		(at 99.06 53.34)
 		(diameter 0)
@@ -1893,10 +1929,26 @@
 		(uuid "380dff9b-9a35-4e99-a770-2035af134e55")
 	)
 	(junction
+		(at 203.2 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89e05046-8d7f-4df0-964d-6c281875a728")
+	)
+	(junction
 		(at 93.98 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99908cf8-6909-4470-b2a2-8f2e6c61f8de")
+	)
+	(wire
+		(pts
+			(xy 198.12 121.92) (xy 214.63 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "170c19b3-18a7-4b14-9b9d-5c5063e7ef92")
 	)
 	(wire
 		(pts
@@ -1950,6 +2002,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 87.63) (xy 36.83 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a1a4365-59a1-412e-9fcb-37944ea96649")
+	)
+	(wire
+		(pts
 			(xy 204.47 100.33) (xy 129.54 100.33)
 		)
 		(stroke
@@ -1957,6 +2019,16 @@
 			(type default)
 		)
 		(uuid "3fe21917-927b-4cee-9a8d-f302f9f0e33b")
+	)
+	(wire
+		(pts
+			(xy 124.46 77.47) (xy 124.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f47a05-fed0-46a1-9def-13c475933c06")
 	)
 	(wire
 		(pts
@@ -1980,6 +2052,26 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 114.3) (xy 137.16 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f924925-7f3e-4a98-bfbf-e847a5fa442b")
+	)
+	(wire
+		(pts
+			(xy 124.46 77.47) (xy 135.89 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b3bb20d-55a9-4658-bee2-62d373ec5e8e")
+	)
+	(wire
+		(pts
 			(xy 99.06 53.34) (xy 203.2 53.34)
 		)
 		(stroke
@@ -1990,6 +2082,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 85.09) (xy 68.58 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66d3b8fb-38be-49b2-9a79-0632d4a43f01")
+	)
+	(wire
+		(pts
 			(xy 203.2 74.93) (xy 196.85 74.93)
 		)
 		(stroke
@@ -1997,6 +2099,36 @@
 			(type default)
 		)
 		(uuid "6bfdca5b-a1f8-4637-9d9c-3e97228d9af6")
+	)
+	(wire
+		(pts
+			(xy 198.12 124.46) (xy 214.63 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6df2448e-8202-4549-90c8-43a9e5042d71")
+	)
+	(wire
+		(pts
+			(xy 217.17 53.34) (xy 217.17 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fce4d0a-bfc6-404b-b014-02947921eada")
+	)
+	(wire
+		(pts
+			(xy 68.58 87.63) (xy 36.83 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ffc6603-8fcb-4896-a080-cf534937fa05")
 	)
 	(wire
 		(pts
@@ -2020,6 +2152,26 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 82.55) (xy 68.58 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e09df9-8214-4542-b1ed-893a8f7ae6d8")
+	)
+	(wire
+		(pts
+			(xy 50.8 80.01) (xy 68.58 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d93be3f-913b-42f3-8665-a9cfb114567e")
+	)
+	(wire
+		(pts
 			(xy 132.08 82.55) (xy 114.3 82.55)
 		)
 		(stroke
@@ -2027,6 +2179,26 @@
 			(type default)
 		)
 		(uuid "7f11f124-7149-4ba7-96c9-4d5dec2cd809")
+	)
+	(wire
+		(pts
+			(xy 29.21 96.52) (xy 36.83 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80c50db0-dcdd-40a7-8536-5969072b2d28")
+	)
+	(wire
+		(pts
+			(xy 203.2 53.34) (xy 217.17 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82b93cf0-c32e-4606-9cdd-7d252ac23c77")
 	)
 	(wire
 		(pts
@@ -2070,6 +2242,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 111.76) (xy 198.12 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6149491-de4a-4b5f-8a98-a19c06b3f24b")
+	)
+	(wire
+		(pts
 			(xy 129.54 80.01) (xy 114.3 80.01)
 		)
 		(stroke
@@ -2100,7 +2282,17 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 77.47) (xy 135.89 77.47)
+			(xy 198.12 127) (xy 214.63 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e241b428-3d1c-4096-b556-03b69e1f1915")
+	)
+	(wire
+		(pts
+			(xy 114.3 77.47) (xy 124.46 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2110,7 +2302,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 46.99 74.93 0)
+		(at 45.72 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2119,7 +2311,7 @@
 		(fields_autoplaced yes)
 		(uuid "115a9358-54ac-412b-99bb-3b2083c584e0")
 		(property "Reference" "SW1"
-			(at 46.99 67.31 0)
+			(at 45.72 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2127,7 +2319,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 46.99 69.85 0)
+			(at 45.72 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2135,7 +2327,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 69.85 0)
+			(at 45.72 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2144,7 +2336,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 69.85 0)
+			(at 45.72 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2153,7 +2345,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 46.99 74.93 0)
+			(at 45.72 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2243,17 +2435,123 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 46.99 90.17 0)
+		(lib_id "2026-03-31_23-59-55:MCP4251-103E_P")
+		(at 137.16 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c9a38f63-7066-4087-8ca2-f7737cef0113")
-		(property "Reference" "SW2"
-			(at 46.99 82.55 0)
+		(uuid "7af3f34e-a480-4cea-b02d-c93a1d5ff212")
+		(property "Reference" "U3"
+			(at 167.64 101.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MCP4251-103E/P"
+			(at 167.64 104.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "PDIP14_300MC_MCH"
+			(at 137.16 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "MCP4251-103E/P"
+			(at 137.16 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "6677d59f-95a7-4207-b84e-3b057d6733c9")
+		)
+		(pin "9"
+			(uuid "4acf5aca-05c3-4f6e-8cef-7aee587cf9b9")
+		)
+		(pin "10"
+			(uuid "759a7def-8e06-46a4-902e-9510bc6db1e3")
+		)
+		(pin "11"
+			(uuid "4cc5495a-a0ed-47f7-a470-0da3c49f80c5")
+		)
+		(pin "12"
+			(uuid "422ba702-ce54-42aa-9d7c-38bfb29fa81c")
+		)
+		(pin "13"
+			(uuid "e5d43948-bf52-4156-9126-463e0bb6a452")
+		)
+		(pin "14"
+			(uuid "71dbb9cc-38c1-4bde-905f-c36f7ca45a9d")
+		)
+		(pin "7"
+			(uuid "737ef697-a68c-47b3-8f4c-172de882306b")
+		)
+		(pin "1"
+			(uuid "a966910b-159e-4b7a-9a5d-ad5fb1962997")
+		)
+		(pin "2"
+			(uuid "a882b249-0a7a-47cb-a1d4-bf1eb37f388e")
+		)
+		(pin "3"
+			(uuid "80856971-d53c-4121-88fa-8911c6812722")
+		)
+		(pin "4"
+			(uuid "31166fac-826b-4610-b182-2c31250c741c")
+		)
+		(pin "5"
+			(uuid "92f5920a-b98b-4810-a101-720d6a89516f")
+		)
+		(pin "6"
+			(uuid "fc05e298-3faa-4057-9101-03d41414786e")
+		)
+		(instances
+			(project "test_schematic"
+				(path "/34cad894-6d1f-473e-a83f-d88de5da818d"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 24.13 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8419c1a1-2566-4761-956d-8a6d8c4e9f3b")
+		(property "Reference" "SW3"
+			(at 24.13 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2261,7 +2559,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 46.99 85.09 0)
+			(at 24.13 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2269,7 +2567,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 85.09 0)
+			(at 24.13 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2278,7 +2576,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 85.09 0)
+			(at 24.13 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2287,7 +2585,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 46.99 90.17 0)
+			(at 24.13 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2296,10 +2594,146 @@
 			)
 		)
 		(pin "1"
-			(uuid "e401c5de-5b17-4662-a6d8-2878788e3892")
+			(uuid "dcd8369f-ca70-4283-8dca-59d362d63a2f")
 		)
 		(pin "2"
-			(uuid "9d8d4166-3206-47fd-9ad0-9ad6ed624bd6")
+			(uuid "96f9667e-8122-43e6-8a66-cd512773771e")
+		)
+		(instances
+			(project "test_schematic"
+				(path "/34cad894-6d1f-473e-a83f-d88de5da818d"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 24.13 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f42fd07-7af3-41da-9f33-0899349d890c")
+		(property "Reference" "SW4"
+			(at 24.13 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 24.13 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 24.13 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54799eb1-37a7-45b6-9aea-c9060b30c613")
+		)
+		(pin "2"
+			(uuid "adc5347f-8333-4c72-963c-1aa4380f73cd")
+		)
+		(instances
+			(project "test_schematic"
+				(path "/34cad894-6d1f-473e-a83f-d88de5da818d"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 36.83 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd44db6d-75a0-4a64-88d2-6da35aabc050")
+		(property "Reference" "SW2"
+			(at 36.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 36.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 36.83 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78d060c6-6af3-4614-9125-0e30eba9cef5")
+		)
+		(pin "2"
+			(uuid "d5bd4af5-d970-4b4d-ad4c-b89aa5f461fc")
 		)
 		(instances
 			(project "test_schematic"
