@@ -3170,7 +3170,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 62.23 45.72 270)
+		(at 62.23 57.15 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3179,7 +3179,7 @@
 		(fields_autoplaced yes)
 		(uuid "712b4750-a79f-498f-93d7-11f2bcf9feea")
 		(property "Reference" "C1"
-			(at 62.23 38.1 90)
+			(at 62.23 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3187,7 +3187,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 62.23 40.64 90)
+			(at 62.23 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3195,7 +3195,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 46.6852 0)
+			(at 58.42 58.1152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3204,7 +3204,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 45.72 0)
+			(at 62.23 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3213,7 +3213,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 62.23 45.72 0)
+			(at 62.23 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3228,7 +3228,7 @@
 			(uuid "f6d731ca-b076-4d77-bbf2-7627f77fcca9")
 		)
 		(instances
-			(project ""
+			(project "test_schematic"
 				(path "/34cad894-6d1f-473e-a83f-d88de5da818d"
 					(reference "C1")
 					(unit 1)
@@ -3682,7 +3682,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 62.23 57.15 270)
+		(at 62.23 45.72 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3690,7 +3690,7 @@
 		(dnp no)
 		(uuid "c767cc1d-3129-4b3b-bad3-8f3f014e1fbe")
 		(property "Reference" "C2"
-			(at 65.532 59.182 90)
+			(at 61.976 42.164 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3698,7 +3698,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 62.484 53.594 90)
+			(at 62.484 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3706,7 +3706,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 58.1152 0)
+			(at 58.42 46.6852 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3715,7 +3715,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 57.15 0)
+			(at 62.23 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3724,7 +3724,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 62.23 57.15 0)
+			(at 62.23 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
