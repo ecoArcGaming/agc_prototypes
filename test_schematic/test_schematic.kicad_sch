@@ -2025,6 +2025,26 @@
 		)
 		(uuid "317b59fd-077e-40a1-aa88-69877e213c5e")
 	)
+	(text "X-Axis Pot"
+		(exclude_from_sim no)
+		(at 194.818 92.964 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b1a1c62-b6e3-4386-9d49-c1dc5ec1ba16")
+	)
+	(text "Y-Axis Pot\n"
+		(exclude_from_sim no)
+		(at 137.668 93.472 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "825d5a04-ff26-42ee-92c5-8b7398be48b0")
+	)
 	(text "Digipot (Left Joystick)"
 		(exclude_from_sim no)
 		(at 166.37 82.55 0)
