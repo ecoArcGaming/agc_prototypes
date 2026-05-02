@@ -3762,6 +3762,19 @@
 		)
 		(uuid "4b1a1c62-b6e3-4386-9d49-c1dc5ec1ba16")
 	)
+	(text "ESP32"
+		(exclude_from_sim no)
+		(at 122.936 67.056 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "4b1abc55-1e8c-4821-b0c6-cac054bc87c8")
+	)
 	(text "Y-Axis Pot\n"
 		(exclude_from_sim no)
 		(at 35.814 112.268 0)
@@ -3772,12 +3785,26 @@
 		)
 		(uuid "825d5a04-ff26-42ee-92c5-8b7398be48b0")
 	)
+	(text "IMU"
+		(exclude_from_sim no)
+		(at 241.046 108.458 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "8ff438fc-6727-42a5-916b-6a86de8af3f7")
+	)
 	(text "Digipot (Left Joystick)"
 		(exclude_from_sim no)
 		(at 53.086 104.394 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "959cdf44-4655-43ac-9f65-2c7212e70a4e")
@@ -3788,6 +3815,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "b0edc178-f002-41bf-8357-0784903c30bb")
