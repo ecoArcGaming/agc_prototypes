@@ -12,18 +12,19 @@ class WhisperTranscriber:
             language=language, task=task
         )
 
-    def transcribe(self, audio_path: str) -> str:
-        audio_array, sampling_rate = librosa.load(audio_path, sr=16_000)
+def transcribe(self, audio: np.ndarray, fs: int = 16000) -> str:
+    # Convert int16 → float32 (librosa/whisper expect float32 in range -1.0 to 1.0)
+    audio_float = audio.flatten().astype(np.float32) / 32768.0
 
-        input_features = self.processor(
-            audio_array,
-            sampling_rate=sampling_rate,
-            return_tensors="pt"
-        ).input_features
+    input_features = self.processor(
+        audio_float,
+        sampling_rate=fs,
+        return_tensors="pt"
+    ).input_features
 
-        predicted_ids = self.model.generate(
-            input_features,
-            forced_decoder_ids=self.forced_decoder_ids
-        )
+    predicted_ids = self.model.generate(
+        input_features,
+        forced_decoder_ids=self.forced_decoder_ids
+    )
 
-        return self.processor.batch_decode(predicted_ids, skip_special_tokens=True)[0]
+    return self.processor.batch_decode(predicted_ids, skip_special_tokens=True)[0]

@@ -1,11 +1,12 @@
 import cv2
+import base64
 import time
 import numpy as np
 import sounddevice as sd
 import Jetson.GPIO as GPIO
 
-# implement VLM logic here
-from vlm import process_data 
+from audio.transcriber import WhisperTranscriber
+from vision.vlm import QwenVL 
 
 # --- Configuration ---
 BUTTON_PIN = 15          # Physical Board Pin 15 (adjust to your wiring)
@@ -57,22 +58,32 @@ def main():
             if GPIO.input(BUTTON_PIN) == GPIO.LOW:
                 print("\n--- Button Pressed! ---")
                 
-                # 1. Take a frame
+                # Take a frame
                 frame = capture_frame()
                 if frame is None:
                     print("Skipping cycle due to camera error.")
                     time.sleep(1)
                     continue
+                _, buffer = cv2.imencode(".jpg", frame)                    # encode to JPEG bytes
+                b64 = base64.b64encode(buffer).decode("utf-8")            # bytes → base64 string
+                b64_string = f"data:image/jpeg;base64,{b64}"              # wrap in data URI
                 
-                # 2. Record 5 seconds of audio
+                #Record 5 seconds of audio
                 audio_data = record_audio(RECORD_SECONDS, SAMPLE_RATE)
                 
-                # 3. Call the external function
-                print("Sending data to external function...")
-                # Assuming process_data takes the frame and audio, and returns audio
+                # Calls transcriber.py
+                print("Transcribing audio...")
+
+                whisper = WhisperTranscriber()
+                prompt = whisper.transcribe(audio=audio_data, fs=SAMPLE_RATE)
+
+                #Calls vlm.py
+                print("Describing image...")
+                qwen = QwenVL()
+                response = qwen.generate(prompt=prompt, image=b64_string)
                 response_audio = process_data(frame, audio_data, SAMPLE_RATE) 
                 
-                # 4. Play response
+                # 5. Play response
                 if response_audio is not None:
                     play_audio(response_audio, SAMPLE_RATE)
                 else:

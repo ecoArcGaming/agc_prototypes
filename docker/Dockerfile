@@ -4,7 +4,7 @@
 # Includes: PyTorch 2.1 + CUDA + TensorRT (GPU-optimised for Jetson)
 # ============================================================
 
-FROM dustynv/pytorch:2.3-r36.4-cu126-24.04
+FROM dustynv/pytorch:2.7-r36.4.0-cu128-24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
@@ -47,7 +47,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY src/ ./src/
+COPY main.py .
 
 RUN mkdir -p /app/models /app/data /app/logs
 
