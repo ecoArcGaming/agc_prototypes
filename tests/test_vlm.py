@@ -1,7 +1,7 @@
 from src.vision.vlm import QwenVL
 
 
-qwen = QwenVL(use_flash_attention=True) 
+qwen = QwenVL(use_flash_attention=False) 
 
 # Text only
 response = qwen.generate("What is the capital of France?")
