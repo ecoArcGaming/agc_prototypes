@@ -6,6 +6,7 @@ import sounddevice as sd
 import Jetson.GPIO as GPIO
 
 from audio.transcriber import WhisperTranscriber
+from audio.tts import PiperTTS
 from vision.vlm import QwenVL 
 
 # --- Configuration ---
@@ -81,11 +82,15 @@ def main():
                 print("Describing image...")
                 qwen = QwenVL()
                 response = qwen.generate(prompt=prompt, image=b64_string)
-                response_audio = process_data(frame, audio_data, SAMPLE_RATE) 
+
+                #Calls tts.py
+                print("Text to speech:")
+                piper = PiperTTS()
+                response_audio, sample_rate = piper.speak(response) 
                 
-                # 5. Play response
+                # Play response
                 if response_audio is not None:
-                    play_audio(response_audio, SAMPLE_RATE)
+                    play_audio(response_audio, sample_rate)
                 else:
                     print("No audio returned from external function.")
                 
