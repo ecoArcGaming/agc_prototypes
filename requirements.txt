@@ -1,4 +1,4 @@
-Jetson.GPIO==2.1.6
+# Jetson.GPIO==2.1.6 pre installed with base image
 opencv-python>=4.8.0
 sounddevice>=0.4.6
 numpy>=1.24.0
