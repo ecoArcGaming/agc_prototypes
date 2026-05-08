@@ -1,0 +1,18 @@
+.git
+.github
+__pycache__
+*.pyc
+*.pyo
+.env
+.venv
+venv/
+models/
+data/
+logs/
+*.log
+.DS_Store
+# Model weight files — never bake into the image
+*.pt
+*.bin
+*.safetensors
+*.onnx

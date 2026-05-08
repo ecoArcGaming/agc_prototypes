@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  vlm-assistant:
+    build: .
+    image: vlm-assistant:latest
+    runtime: nvidia
+
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all,compute,utility
+      - HF_HOME=/app/models
+      - TRANSFORMERS_CACHE=/app/models
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
+
+    volumes:
+      - /mnt/nvme/models:/app/models
+      - ./data:/app/data
+      - ./logs:/app/logs
+
+    devices:
+      # Audio
+      - /dev/snd:/dev/snd
+      # GPIO
+      - /dev/gpiochip0:/dev/gpiochip0
+      - /dev/gpiochip1:/dev/gpiochip1
+      # Camera — uncomment if needed
+      - /dev/video0:/dev/video0
+
+    # Required for Jetson.GPIO inside the container
+    group_add:
+      - gpio
+
+    # Needed for Qwen2.5-VL + Whisper running simultaneously
+    shm_size: "6gb"
+
+    network_mode: host
+    restart: unless-stopped

@@ -38,3 +38,26 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# Model weights — can be several GB, never commit
+models/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Runtime output
+data/
+logs/
+*.log
+.env
+
+# Mac
+.DS_Store
