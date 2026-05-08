@@ -34,7 +34,10 @@ RUN apt-get update && apt-get install -y \
 # ── 2. Python deps BEFORE copying src (key cache trick) ───────
 # Only re-runs if requirements.txt changes, NOT when src/ changes
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir \
+    --index-url https://pypi.org/simple \
+    --extra-index-url https://pypi.jetson-ai-lab.dev/jp6/cu128 \
+    -r requirements.txt
 
 # ── 3. Source code last (changes most often) ──────────────────
 COPY src/ ./src/
